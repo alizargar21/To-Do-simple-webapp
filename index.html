@@ -1,39 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./all.min.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <section id="main-todo">
+      <section id="main-todo">
         <h1>Todo App</h1>
         <form class="form-container">
-            <input type="text" id="todo-input" placeholder="type it ..."> 
-            <button id="add">Add</button>
-            <select name="" id="select">
-                <option value="All">All Status</option>
-                <option value="complete">Complete</option>
-                <option value="uncomplete">uncomplete</option>
-            </select>
+          <input type="text" id="todo-input" placeholder="type it ..." />
+          <button id="add">Add</button>
+          <select name="" id="select">
+            <option value="all">All Status</option>
+            <option value="complete">Complete</option>
+            <option value="uncompleted">Uncompleted</option>
+          </select>
         </form>
-            <div class="container">
-                <ul>
-                    <div class="todo-div"><li>task 1</li></div>
-                    <div class="todo-div"><li>task 2</li></div>
-                    <div class="todo-div complete"><li>task 3 </li></div>
-                    <div class="todo-div complete"><li>task 3 </li></div>
-                    <div class="todo-div complete"><li>task 3 </li></div>
-                    <div class="todo-div complete"><li>task 3 </li></div>
-                    
-                    
-                </ul>
-            </div>
-        </section>
         
+        <div class="container">
+          <ul class="todo-list"></ul>
+        </div>
+      </section>
     </main>
-</body>
-</html>``
+    <script src="./todo.js"></script>
+  </body>
+</html>
+``
